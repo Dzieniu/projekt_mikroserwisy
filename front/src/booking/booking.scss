@@ -1,0 +1,115 @@
+.booking-date {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+}
+
+.booking-date > p {
+  opacity: 0.6;
+  margin-left: 30px;
+}
+
+.booking-date > p > span {
+  opacity: 1;
+}
+
+.booking-box {
+  margin-top: 40px;
+  height: 100%;
+  padding: 10px 50px;
+  box-shadow: 0px 5px 10px rgba(136, 136, 136, 0.596);
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.booking-item {
+  margin-top: 10px;
+  height: 130px;
+  display: flex;
+}
+
+.item-inboxText--booking {
+  display: flex;
+}
+
+.item-name--booking {
+  margin-right: 15px;
+}
+
+.item-ranking--booking {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.booking-grid {
+  margin-top: 10px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  font-size: 15px;
+}
+
+.booking-price {
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 100px;
+}
+
+.app-coupon {
+  margin-top: 20px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 60px;
+}
+
+.coupon-textBox {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coupon-textBox > input {
+  height: 50px;
+  width: 170px;
+  border: 0px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.7;
+  outline: none;
+  text-align: center;
+}
+
+.coupon-btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+  background-color: rgb(189, 189, 189);
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+}
+
+.coupon-cost {
+  width: 150px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coupon-price {
+  color: red;
+  font-size: 28px;
+}
+.checked {
+  color: orange;
+}

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+}
+.app-resTittle {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 35px;
+}
+.app-MakeRes {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+/* .app-data{
+    margin: 0px auto;
+    margin-top: 40px;
+    height:180px ;
+    width: 70%;
+    box-shadow: 0px 7px 20px grey ;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .data-item{
+    height: 100%;
+    width: 300px;
+    padding: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.568);
+  }
+  .data-item > span{
+    font-size:20px ;
+  }
+  .data-select {
+    margin-left: 10px;
+    height: 100%;
+    width: 20%;
+    -webkit-appearance: none;
+    outline: none;
+    font-size: 60px;
+    border: 5px solid rgba(128, 128, 128, 0);
+  }
+  .data-select > option{
+    max-height: 25px;
+    font-size: 25px;
+  }
+  .data-select--month{
+    -webkit-appearance: none;
+    outline: none;
+    border: 5px solid rgba(128, 128, 128, 0);
+    font-size: 20px;
+  }
+  .data-person{
+    height: 100%;
+    border: 0px;
+    outline: none;
+    font-size: 60px;
+  } */
+
+.app-check {
+  height: 100%;
+  width: 300px;
+  padding: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+  background-color: #dae2e4;
+}
+.check-text {
+  color: #6eb2dd;
+}
+.check-btn {
+  margin-top: 40px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: #849f16;
+  border-radius: 3px;
+}
+.app-roomsTittle {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.app-box {
+  margin: 0px auto;
+  margin-top: 50px;
+  height: 100%;
+  width: 70%;
+}
+
+.price {
+  color: red;
+  font-size: 25px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+}
+.available {
+  color: #bddc62;
+}
+.unactive {
+  opacity: 0.5;
+}

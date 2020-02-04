@@ -1,0 +1,46 @@
+.app-data {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.data-item {
+  height: 100%;
+  width: 300px;
+  padding: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.data-item > span {
+  font-size: 20px;
+}
+
+.data-select {
+  margin-left: 10px;
+  height: 100%;
+  width: 34%;
+  -webkit-appearance: none;
+  outline: none;
+  font-size: 60px;
+  border: 5px solid rgba(128, 128, 128, 0);
+}
+
+.data-select > option {
+  max-height: 25px;
+  font-size: 25px;
+}
+
+.data-select--month {
+  -webkit-appearance: none;
+  outline: none;
+  border: 5px solid rgba(128, 128, 128, 0);
+  font-size: 20px;
+}
+
+.data-person {
+  height: 100%;
+  border: 0px;
+  outline: none;
+  font-size: 60px;
+}

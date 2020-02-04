@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Magda Kocioł",
+        "email":"magda@email.pl",
+        "password":"kupa",
+        "id":"05321"
+    },
+    {
+        "name": "Michał Kocioł",
+        "email":"michal@email.pl",
+        "password":"coto",
+         "id":"3124"
+    },
+    {
+        "name": "Adam Kocioł",
+        "email":"adam@a.pl",
+        "password":"akademia",
+        "id":"5231"
+    }
+    , {
+        "name": "Damian Kocioł",
+        "email": "a",
+        "password": "a",
+        "id": "5231"
+    }
+]

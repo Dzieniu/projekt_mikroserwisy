@@ -1,0 +1,83 @@
+[
+    {
+        "id":"0",
+        "url":"https://q-cf.bstatic.com/images/hotel/max1024x768/731/73118462.jpg",
+        "name":"Luksusowy pokój",
+        "dataInDay":"11",
+        "dataOutDay":"14",
+        "dataInMonth":"1",
+        "dataOutMonth": "3",
+        "ranking":"3",
+        "status":"Dostępny",
+        "deposit":"niewymagana",
+        "beds":"2",
+        "passanger":"3",
+        "breakfastPrice":"25",
+        "price":"200",
+        "description":"Luksusowy pokój z pięknym widokiem za okno w luksusowej dzielnicy",
+        "reviews":[
+            {
+                "autor":"Adam Kowalski",
+                "content":"Najlepszy pokój w jakim byłem,Obsługa na najwyższym poziomie"
+            },
+            {
+                "autor":"Magda Kniuk",
+                "content":"Niesamowity widok z okna!!"
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "url":"http://u.andersiahotel.pl/2014.andersiahotel.pl/thumb/1400x900/uploads/Comfortnawww.jpg",
+        "name":"Mistyczny pokój",
+        "dataInDay":"11",
+        "dataOutDay":"14",
+        "dataInMonth":"3",
+        "dataOutMonth": "7",
+        "ranking":"3",
+        "status":"Dostępny",
+        "deposit":"niewymagana",
+        "beds":"2",
+        "passanger":"3",
+        "breakfastPrice":"25",
+        "price":"200",
+        "description": "Mistyczny pokój z pięknym widokiem za okno w luksusowej dzielnicy",
+        "reviews":[
+            {
+                "autor":"Adam Kowalski",
+                "content":"Najlepszy pokój w jakim byłem,Obsługa na najwyższym poziomie"
+            },
+            {
+                "autor":"Magda Kniuk",
+                "content":"Niesamowity widok z okna!!"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "url":"https://q-cf.bstatic.com/images/hotel/max1024x768/112/112782897.jpg",
+        "name":"Klasyczny pokój",
+        "dataInDay":"11",
+        "dataOutDay":"14",
+        "dataInMonth":"6",
+        "dataOutMonth": "12",
+        "ranking":"3",
+        "status": "Dostępny",
+        "deposit":"niewymagana",
+        "beds":"2",
+        "passanger":"3",
+        "breakfastPrice":"25",
+        "price":"200",
+        "description": "Klasyczny pokój z pięknym widokiem za okno w luksusowej dzielnicy",
+        "reviews":[
+            {
+                "autor":"Adam Kowalski",
+                "content":"Najlepszy pokój w jakim byłem,Obsługa na najwyższym poziomie"
+            },
+            {
+                "autor":"Magda Kniuk",
+                "content":"Niesamowity widok z okna!!"
+            }
+        ]
+    }
+]
