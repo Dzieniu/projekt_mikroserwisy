@@ -1,0 +1,29 @@
+
+version: "3"
+services:
+  as_postgres:
+    image: postgres:latest
+    network_mode: bridge
+    container_name: as_postgres
+    volumes:
+      - as_data:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=authentication_service
+    restart: unless-stopped
+  authentication_service:
+    image: dzieniu/authentication_service:latest
+    network_mode: bridge
+    container_name: authentication_service
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - as_postgres
+    links:
+      - as_postgres
+volumes:
+  as_data:
