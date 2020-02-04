@@ -1,0 +1,93 @@
+
+version: "3"
+services:
+  r_postgres:
+    image: postgres:latest
+    container_name: r_postgres
+    volumes:
+      - r_data:/var/lib/postgresql/data
+      - ./init_res:/docker-entrypoint-initdb.d
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=ReservationDB
+    restart: unless-stopped
+    networks:
+      - reservation
+  reservationService:
+    image: doktor3k/reservationapi:latest
+    container_name: reservation_service
+    ports:      
+      - 8081:80
+    restart: unless-stopped
+    depends_on:
+      - r_postgres
+    links:
+      - r_postgres
+    networks:
+      - default
+      - reservation
+  as_postgres:
+    image: postgres:latest
+    container_name: as_postgres
+    volumes:
+      - as_data:/var/lib/postgresql/data
+      - ./init_auth:/docker-entrypoint-initdb.d
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=authentication_service
+    restart: unless-stopped
+    networks:
+      - authentication
+  authentication_service:
+    image: dzieniu/authentication_service:latest
+    container_name: authentication_service
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - as_postgres
+      - reservationService
+    links:
+      - as_postgres
+      - reservationService
+    networks:
+      - default
+      - authentication
+  i_postgres:
+    image: bartekzab/baza-image:latests
+    container_name: i_postgres
+    volumes:
+      - i_data:/var/lib/postgresql/data
+    ports:
+      - 35432:5432
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+    restart: unless-stopped
+  image-service:
+    image: bartekzab/image-service:latest
+    container_name: image-service
+    ports:
+      - 34848:4848
+      - 38080:8080
+    restart: unless-stopped
+  frontend-service:
+    image: bartekzab/frontend-service:latest
+    container_name: frontend-service
+    ports:
+      - 3000:80
+    restart: unless-stopped
+volumes:
+  r_data:
+  i_data:
+  as_data:
+networks:
+  default:
+  authentication:
+  reservation:
