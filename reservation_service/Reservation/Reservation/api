@@ -1,0 +1,24 @@
+/reservations/getroom?id - pobieranie danego pokoju
+/reservations/getallrooms - pobieranie wszystkich pokoi 
+/reservations/getfreerooms?date - pobieranie wolnych pokoi na podany dzień
+/reservations/getuserreservations?id  -pobieranie rezerwacji dla danego użytkownika
+
+/reservations/addroom  --dodawanie pokoju
+body
+{
+Description
+ReservationPrize(int)
+}
+
+
+/reservations/addreservation --dodawanie rezerwacji
+body
+{
+ReservationDate
+RoomID
+UserId
+}
+
+
+/reservation/deletereservation?id  -
+/reservation/deleteroom?id  - 
