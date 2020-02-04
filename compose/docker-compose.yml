@@ -64,14 +64,16 @@ services:
     container_name: i_postgres
     volumes:
       - i_data:/var/lib/postgresql/data
+      - ./init_img:/docker-entrypoint-initdb.d
     ports:
       - 35432:5432
     environment:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_USER=postgres
+      - POSTGRES_DB=proseminarium
     restart: unless-stopped
   image-service:
-    image: bartekzab/image-service:latest
+    image: bartekzab/image-service:v2
     container_name: image-service
     ports:
       - 34848:4848
